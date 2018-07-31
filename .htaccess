@@ -1,0 +1,11 @@
+# IP制限
+# accept allowed ip addresses
+RewriteEngine On
+RewriteCond %{REMOTE_ADDR} !^153\.126\.136\.148$
+RewriteCond %{REMOTE_ADDR} !^202\.61\.19\.193$
+RewriteCond %{REMOTE_ADDR} !^221\.240\.155\.205$
+RewriteCond %{REMOTE_ADDR} !^221\.240\.155\.196$
+RewriteCond %{REMOTE_ADDR} !^219\.117\.241\.193$
+RewriteCond %{REMOTE_ADDR} !^120\.143\.49\.150$
+RewriteCond %{REMOTE_ADDR} !^221\.240\.178\.146$
+RewriteRule .* https://www.indetail.co.jp/ [R,L]
